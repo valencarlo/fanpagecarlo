@@ -199,7 +199,7 @@ footer a:hover{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: linear-gradient(black, white);
+            background-image: linear-gradient(rgb(255, 0, 0), white);
     }
     nav{
         background-color: rgba(0, 0, 0, 0);
