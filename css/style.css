@@ -10,6 +10,7 @@ h1{
     font-style: italic;
     background-color: gray;
     border-radius: 10px;
+    text-decoration: none;
 }
 .terminos{
     font-size: 20px;
@@ -123,68 +124,108 @@ footer a:hover{
 } 
 @keyframes animacion{
     0%{
-    color: blueviolet;
-    };
-    
+    color: rgb(255, 255, 255);
+    background-color: black;   
+    border-radius: 10px;
+    }
     25%{
-    color: blue;
+    color: rgb(255, 255, 255);
+    background-color: black;   
+    border-radius: 10px;
     }
     50%{
-    color: aqua   
+    color: rgb(255, 255, 255);
+    background-color: black;   
+    border-radius: 10px;   
     }
     75%{
-    color: yellow; 
+    color: rgb(255, 255, 255); 
     background-color: black;   
+    border-radius: 10px;
     }
     100%{
-        color: green;
+    color: rgb(255, 255, 255);
+    background-color: black;   
+    border-radius: 10px;
     }
 }
 .familia1{
     margin-bottom: 15px;
+    align-items: center;
+}
+.body1{
+    text-decoration: none;
+}
+.noticias{
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
 }
   @media screen and (max-width: 480px){ 
     nav{
         background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     .header{
         background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     section{
         background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     main{
         background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
-    aside{
-        background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+    .sidebar{
+        background-color: rgba(88, 88, 88, 0.723);
+        color: rgb(0, 0, 0);
     }
     footer{
         background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     p{
         background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     h1{
         background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     h2{
         background-color: rgba(0, 0, 0, 0);
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
-   
-iframe{
+   #parrafo{
+        font-size: larger;
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: gray;
+        border-radius: 10px;
+   }
+#iframe1{
     display: none;
 }
 img{
     display: none;
 }
+nav{
+    font-size: small;
+}
+.noticias{
+    font-size: medium;
+}
+}
+@media  screen and (max-width: 1000px) {
+    .noticias{
+        font-size: 30px;
+    }
+    .familia1{
+        display: none;
+    }
 }
