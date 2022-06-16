@@ -1,0 +1,4 @@
+body{
+    background-color: map-get($body, bg-container2);
+    text-decoration: map-get($body, decoration);
+} 

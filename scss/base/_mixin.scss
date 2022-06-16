@@ -1,0 +1,9 @@
+$colors: rgba(0, 0, 0, 0);
+$ancho: 20px;
+$borde: 5%;
+
+@mixin colores ($colors, $ancho, $borde){
+    background-color:$colors;
+    width:$ancho;
+    margin: $borde;
+}
