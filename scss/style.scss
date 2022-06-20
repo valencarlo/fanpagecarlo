@@ -3,7 +3,7 @@
 @import"./base/maps";
 
 body {
-    /*background:
+    background:
         radial-gradient(black 3px, transparent 4px),
         radial-gradient(black 3px, transparent 4px),
         linear-gradient(#fff 4px, transparent 0),
@@ -11,9 +11,8 @@ body {
         linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
         #fff;
     background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;*/
-    background-color: map-get($body, bg-container2);
-    text-decoration: map-get($body, decoration);
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+   
 
     .container2 {
         text-decoration: none;
@@ -175,9 +174,18 @@ body {
         }
     }
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 768px) {
         .animacion {
             font-size: medium;
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 
@@ -204,7 +212,13 @@ body {
         }
 
         nav {
-            font-size: small;
+            ul{
+                li{
+                    a{
+                        font-size: small;
+                    }
+                }
+            }
         }
 
         .noticias {
