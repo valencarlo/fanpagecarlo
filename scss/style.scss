@@ -4,15 +4,15 @@
 
 body {
     background:
-        radial-gradient(black 3px, transparent 4px),
-        radial-gradient(black 3px, transparent 4px),
+        radial-gradient(rgb(187, 57, 57) 3px, transparent 4px),
+        radial-gradient(rgb(187, 57, 57) 3px, transparent 4px),
         linear-gradient(#fff 4px, transparent 0),
         linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
         linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
         #fff;
     background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-   
+
 
     .container2 {
         text-decoration: none;
@@ -82,10 +82,11 @@ body {
                 border-radius: 10px;
                 text-decoration: none;
 
-                img {
-                    margin-left: 270px;
-                    margin-right: 270px;
-                    position: relative;
+                .familia1{ 
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-around;
                 }
 
             }
@@ -133,9 +134,9 @@ body {
             text-decoration: none;
             color: black;
 
-            @include colores( $colors, $ancho, $borde);
-            
-                &:hover {
+            @include colores($colors, $ancho, $borde);
+
+            &:hover {
                 transform: scale(150%)
             }
         }
@@ -178,10 +179,11 @@ body {
         .animacion {
             font-size: medium;
         }
-        nav{
-            ul{
-                li{
-                    a{
+
+        nav {
+            ul {
+                li {
+                    a {
                         font-size: 18px;
                     }
                 }
@@ -212,9 +214,9 @@ body {
         }
 
         nav {
-            ul{
-                li{
-                    a{
+            ul {
+                li {
+                    a {
                         font-size: small;
                     }
                 }
