@@ -3,19 +3,18 @@
 @import"./base/maps";
 
 body {
-    background:
-        radial-gradient(rgb(187, 57, 57) 3px, transparent 4px),
-        radial-gradient(rgb(187, 57, 57) 3px, transparent 4px),
-        linear-gradient(#fff 4px, transparent 0),
-        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
-        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
-        #fff;
-    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-
-
+    background-image: url(https://pbs.twimg.com/media/FC1eqYsWQBQGRMl.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: aliceblue;
+ .titulo{ 
+        text-decoration: underline;
+        }
     .container2 {
-        text-decoration: none;
+       
+           
 
 
         nav {
@@ -23,7 +22,7 @@ body {
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 20px;
                 list-style-type: none;
-                background-color: rgba(255, 255, 255, 0.469);
+                background-color: rgba(255, 255, 255, 0);
                 margin: 0;
                 border: solid 5px rgb(0, 0, 0);
                 height: 50px;
@@ -37,7 +36,7 @@ body {
                     padding: 15px;
 
                     a {
-                        color: brown;
+                        color: rgb(255, 255, 255);
                         text-decoration: none;
                     }
 
@@ -53,7 +52,7 @@ body {
             #parrafo {
                 padding: 5px 5px 5px 5px;
                 @extend %display;
-                background-color: brown;
+                background-color: rgb(41, 42, 39);
                 border-radius: 10px;
             }
 
@@ -63,7 +62,6 @@ body {
                 flex-direction: row;
                 justify-content: space-around;
                 font-size: 50px;
-
                 &:hover {
                     animation: animacion 4s;
                 }
@@ -78,11 +76,11 @@ body {
             .lista {
                 font-size: x-large;
                 font-style: italic;
-                background-color: rgba(165, 42, 42, 0.969);
+                background-color: rgba(145, 105, 105, 0);
                 border-radius: 10px;
                 text-decoration: none;
 
-                .familia1{ 
+                .familia1 {
                     display: flex;
                     align-items: center;
                     flex-direction: row;
@@ -112,14 +110,14 @@ body {
                 align-items: center;
                 flex-direction: row;
                 justify-content: space-around;
-                background-color: rgb(165, 42, 42);
+                background-color: rgba(165, 42, 42, 0);
                 border-radius: 10px;
             }
 
         }
 
     }
-
+     
     footer {
         display: flex;
         flex-direction: row;
@@ -132,7 +130,7 @@ body {
 
         a {
             text-decoration: none;
-            color: black;
+            color: rgb(255, 255, 255);
 
             @include colores($colors, $ancho, $borde);
 
@@ -175,16 +173,45 @@ body {
         }
     }
 
+    @media screen and (max-width: 1000px) {
+        .noticias {
+            font-size: 30px;
+        }
+
+        .familia1 {
+            display: none;
+        }
+
+        .animacion {
+            font-size: medium;
+        }
+    }
+
     @media screen and (max-width: 768px) {
         .animacion {
             font-size: medium;
         }
 
+        li {
+            a {
+                color: dimgray;
+            }
+        }
+
+
+        header {
+            h1 {
+                color: black;
+            }
+        }
+
+
+
         nav {
             ul {
                 li {
                     a {
-                        font-size: 18px;
+                        font-size: 18px
                     }
                 }
             }
@@ -237,19 +264,7 @@ body {
 
     }
 
-    @media screen and (max-width: 1000px) {
-        .noticias {
-            font-size: 30px;
-        }
 
-        .familia1 {
-            display: none;
-        }
-
-        .animacion {
-            font-size: medium;
-        }
-    }
 
 }
 

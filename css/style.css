@@ -4,23 +4,23 @@ body .container2 .header #parrafo, body .container2 nav ul {
   align-items: center;
   justify-content: space-around;
 }
-/* aca quiero poner un bgi pero no me deja */
-#fondo{
-  background-image: url();
-}
+
 body {
-  background: radial-gradient(rgb(187, 57, 57) 3px, transparent 4px), radial-gradient(rgb(187, 57, 57) 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
-  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: url(https://pbs.twimg.com/media/FC1eqYsWQBQGRMl.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: aliceblue;
 }
-body .container2 {
-  text-decoration: none;
+body .titulo {
+  text-decoration: underline;
 }
 body .container2 nav ul {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 20px;
   list-style-type: none;
-  background-color: rgba(255, 255, 255, 0.469);
+  background-color: rgba(255, 255, 255, 0);
   margin: 0;
   border: solid 5px rgb(0, 0, 0);
   height: 50px;
@@ -33,7 +33,7 @@ body .container2 nav ul .animacion {
   padding: 15px;
 }
 body .container2 nav ul .animacion a {
-  color: brown;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 body .container2 nav ul .animacion:hover {
@@ -41,7 +41,7 @@ body .container2 nav ul .animacion:hover {
 }
 body .container2 .header #parrafo {
   padding: 5px 5px 5px 5px;
-  background-color: brown;
+  background-color: rgb(41, 42, 39);
   border-radius: 10px;
 }
 body .container2 .header .animacion2 {
@@ -57,7 +57,7 @@ body .container2 .header .animacion2:hover {
 body .container2 main .lista {
   font-size: x-large;
   font-style: italic;
-  background-color: rgba(165, 42, 42, 0.969);
+  background-color: rgba(145, 105, 105, 0);
   border-radius: 10px;
   text-decoration: none;
 }
@@ -86,7 +86,7 @@ body .container2 .sidebar .pashafo {
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgb(165, 42, 42);
+  background-color: rgba(165, 42, 42, 0);
   border-radius: 10px;
 }
 body footer {
@@ -101,7 +101,7 @@ body footer {
 }
 body footer a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0);
   width: 20px;
   margin: 5%;
@@ -136,9 +136,26 @@ body footer a:hover {
     border-radius: 10px;
   }
 }
+@media screen and (max-width: 1000px) {
+  body .noticias {
+    font-size: 30px;
+  }
+  body .familia1 {
+    display: none;
+  }
+  body .animacion {
+    font-size: medium;
+  }
+}
 @media screen and (max-width: 768px) {
   body .animacion {
     font-size: medium;
+  }
+  body li a {
+    color: dimgray;
+  }
+  body header h1 {
+    color: black;
   }
   body nav ul li a {
     font-size: 18px;
@@ -172,17 +189,6 @@ body footer a:hover {
   }
   body .animacion {
     font-size: small;
-  }
-}
-@media screen and (max-width: 1000px) {
-  body .noticias {
-    font-size: 30px;
-  }
-  body .familia1 {
-    display: none;
-  }
-  body .animacion {
-    font-size: medium;
   }
 }
 
